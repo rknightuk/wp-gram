@@ -21,5 +21,5 @@
 	<body>
 
 		<header>
-			<h1><?php bloginfo('name'); ?></h1>
+			<h1><img src="<?php bloginfo('template_directory'); ?>/img/camera-small.png"> <a href="/"><?php bloginfo('name'); ?></a></h1>
 		</header>

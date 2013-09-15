@@ -1,18 +1,19 @@
 <?php get_header();?>
 
-<section class="main">
+<section class="main wrap">
+
 	<section class="photo-block">
 
 	<?php if (have_posts()) : ?>  
     <?php while (have_posts()) : the_post(); ?>
 
 		<section class="photo">
-			<?php the_content();?>
-			<p class="info"><?php the_title();?><br/>
-			<?php echo get_the_date();?> | <a href="<?php the_permalink(); ?>">&infin; permalink</a></p>
+			<p class="title"><?php the_title();?></p>
+			<a href="<?php the_permalink(); ?>"><?php the_content();?></a>
+			<p class="date"><?php echo get_the_date();?> | <a href="<?php the_permalink(); ?>">&infin; permalink</a></p>
 			<p class="share">
-				<a target="_blank" href="https://twitter.com/intent/tweet?text=<?php the_title();?>&amp;url=<?php the_permalink();?>">tweet this photo</a> | 
-				<a target="_blank" href="http://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>">share on facebook</a>
+				<a target="_blank" href="https://twitter.com/intent/tweet?text=<?php the_title();?>&amp;url=<?php the_permalink();?>">tweet</a> | 
+				<a target="_blank" href="http://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>">share</a>
 			</p>
 		</section>
 
@@ -27,7 +28,6 @@
     //Something that happens when a post isn’t found.
 <?php endif; ?>
 
-	</section>
-</section>
+	</section> <!-- End photo-block -->
 
 <?php get_footer();?>
