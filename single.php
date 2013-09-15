@@ -7,7 +7,16 @@
 
 		<section class="photo">
 			<h2><?php the_title();?></h2>
-			<?php the_content();?>
+			<?php
+			if (catch_that_image() != "NoImage") {
+				echo '<img src="';
+				echo catch_that_image();
+				echo '" alt="" />';
+			}
+			else {
+				the_content();
+			}
+			?>
 			<p class="info-single"><?php echo get_the_date();?></p>
 			<p class="share">
 				<a target="_blank" href="https://twitter.com/intent/tweet?text=<?php the_title();?>&amp;url=<?php the_permalink();?>">tweet this photo</a> | 
