@@ -2,6 +2,7 @@
 
 	<head>
 		
+		<!-- GitHub -->
 		<title><?php bloginfo('name'); ?> <?php wp_title(); ?></title>
 		
 		<meta charset="UTF-8">
