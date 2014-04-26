@@ -31,7 +31,7 @@
 	</nav>
     
     <?php else : ?>  
-    //Something that happens when a post isn’t found.
+    Sorry, Post not found.
 <?php endif; ?>
 
 	</section> <!-- End photo-block -->
