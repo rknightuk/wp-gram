@@ -18,10 +18,6 @@
 			}
 			?>
 			<p class="info-single"><?php echo get_the_date();?></p>
-			<p class="share">
-				<a target="_blank" href="https://twitter.com/intent/tweet?text=<?php the_title();?>&amp;url=<?php the_permalink();?>">tweet this photo</a> | 
-				<a target="_blank" href="http://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>">share on facebook</a>
-			</p>
 		</section>
 
     <?php endwhile; ?> 

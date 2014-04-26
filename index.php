@@ -9,6 +9,7 @@
 
 		<section class="photo">
 			<p class="title"><?php the_title();?></p>
+			<p class="date"><?php echo get_the_date();?></p>
 			<a href="<?php the_permalink(); ?>">
 				<?php
 				if (catch_that_image() != "NoImage") {
@@ -20,11 +21,6 @@
 					the_content();
 				}
 				?></a>
-			<p class="date"><?php echo get_the_date();?> | <a href="<?php the_permalink(); ?>">&infin; permalink</a></p>
-			<p class="share">
-				<a target="_blank" href="https://twitter.com/intent/tweet?text=<?php the_title();?>&amp;url=<?php the_permalink();?>">tweet</a> | 
-				<a target="_blank" href="http://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>">share</a>
-			</p>
 		</section>
 
     <?php endwhile; ?> 
