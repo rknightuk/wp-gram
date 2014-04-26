@@ -17,7 +17,7 @@ h1 { margin-bottom: 1em; }
 p { margin: 0.5em 0; }
 
 a:link, a:visited, a:active { color: black; text-decoration: none; border-bottom: 1px solid black;}
-a:hover   { color: black; text-decoration: none; border-bottom: 1px solid #f0d04d; }
+a:hover   { color: black; text-decoration: none; border-bottom: 1px solid #ea6f62; }
 
 /* Site */
 
@@ -34,13 +34,27 @@ h1 { font-size:2.28571em; padding:0.2em 0;}
 h2 { font-size:1.71429em; padding:0.8em 0; }
 h3 { font-size:1.14286em; padding:0.05em 0; }
 
+h1 a:link,
+h1 a:active,
+h1 a:visited,
+h1 a:hover {
+  color: #E2E2E2;
+  border-bottom: none;
+}
+
 header {
   width: 100%;
   text-align: center;
   padding: 25px 0;
-  background-color: #f0d04d;
+  background-color: #ea6f62;
   color: #3A3A3A;
 }
+  .header {
+     border: 3px solid #E2E2E2;
+     width: 40%;
+     margin: 0 auto;
+     padding: 30px;
+  }
 
 .wrap { max-width: 800px; }
 
@@ -114,7 +128,7 @@ footer {
   clear: both;
   width: 100%;
   text-align: center;
-  background-color: #f0d04d;
+  background-color: #ea6f62;
   color: #3A3A3A;
   padding: 10px 0;
   font-size: 80%;
