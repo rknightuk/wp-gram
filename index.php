@@ -31,7 +31,7 @@
 	</nav>
     
     <?php else : ?>  
-    Sorry, Post not found.
+    </p>Sorry, photo not found.</p>
 <?php endif; ?>
 
 	</section> <!-- End photo-block -->
