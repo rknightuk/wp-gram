@@ -24,5 +24,5 @@
 
 		<header>
 			<h1><a href="/"><?php bloginfo('name'); ?></a></h1>
-			<p class="description"><?php bloginfo('description'); ?></p>
+			<p class="description"><?php echo html_entity_decode(get_bloginfo('description')); ?></p>
 		</header>
