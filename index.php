@@ -17,6 +17,8 @@
                     the_content();
                 }
             ?>
+            </a>
+            <a href="<?php the_permalink(); ?>">
                 <div class="overlay">
                     <p class="title"><?php the_title();?></p>
                     <div class="line"></div>
