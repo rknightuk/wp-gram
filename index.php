@@ -6,8 +6,17 @@
 
     	<section class="photo main">
 
-    		<a href="<?php the_permalink(); ?>"?
-    			<?php the_content(); ?>
+    		<a href="<?php the_permalink(); ?>">
+    			<?php
+                if (catch_that_image() != "NoImage") {
+                    echo '<img src="';
+                    echo catch_that_image();
+                    echo '" alt="" />';
+                }
+                else {
+                    the_content();
+                }
+                ?>
     		</a>
 
     	</section>
