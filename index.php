@@ -6,6 +6,7 @@
 
     	<section class="photo main">
 
+            <a href="<?php the_permalink(); ?>">
 			<?php
                 if (catch_that_image() != "NoImage") {
                     echo '<img src="';
@@ -16,7 +17,6 @@
                     the_content();
                 }
             ?>
-            <a href="<?php the_permalink(); ?>">
                 <div class="overlay">
                     <p class="title"><?php the_title();?></p>
                     <div class="line"></div>
