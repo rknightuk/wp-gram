@@ -61,12 +61,42 @@ header {
 }
 
 .photo {
+	position: relative;
 	width: auto;
 	padding: 15px 20px;
 	text-align: center;
 	border-radius: 5px;
 	margin: 5px;
 }
+
+.overlay {
+	display: none;
+	position: absolute;
+	top: 22px;
+	left: 27px;
+	right: 27px;
+	bottom: 22px;
+	background-color: rgba(214, 214, 214, 0.8);
+	text-align: center;
+	font-weight: bold;
+}
+
+	.overlay p {
+		margin-top: 30%;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+	.photo:hover .overlay {
+		display: block;
+	}
+
+	.line {
+		border: 1px solid #666;
+		margin: 0 auto;
+		width: 50%;
+		margin-bottom: 5px;
+	}
 
 	.photo.single {
   		max-width: 630px;

@@ -6,8 +6,7 @@
 
     	<section class="photo main">
 
-    		<a href="<?php the_permalink(); ?>">
-    			<?php
+			<?php
                 if (catch_that_image() != "NoImage") {
                     echo '<img src="';
                     echo catch_that_image();
@@ -16,8 +15,14 @@
                 else {
                     the_content();
                 }
-                ?>
-    		</a>
+            ?>
+            <a href="<?php the_permalink(); ?>">
+                <div class="overlay">
+                    <p class="title"><?php the_title();?></p>
+                    <div class="line"></div>
+                    <p class="meta"><?php echo get_the_date();?></p>
+                </div>
+            </a>
 
     	</section>
 
