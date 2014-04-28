@@ -73,6 +73,8 @@ header {
   		margin: 0 auto;
 	}
 
+.location { font-style: italic; }
+
 	.photo.main {
 		max-width: 23%;
 		display: inline-block;
